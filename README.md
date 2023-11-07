@@ -24,11 +24,17 @@ Vite는 초기 구동 속도가 빠르며, 코드 번들링을 필요할 때만 
 비록 Evan You가 Vue.js 개발자이지만, Vite는 다른 프레임워크 및 라이브러리 (React, Svelte, 등)와도 함께 작동할 수 있습니다.
 
 ## 구현 기능
-- 구글 폰트 적용
+- 구글 폰트
+- smooth 효과 https://lenis.studiofreight.com
+- 자바스크립트 메뉴 클릭 이동 효과
+- GSAP를 이용한 가로 효과
+- JAVASCRIPT  모듈 기능 
+- 웹표준 준수를 위한 스킵 메뉴 및 aria, role 사용
+
 
 ## 트러블 슈팅
 <details>
 <summary>git 업로드 버그</summary>
 권한으로 인한 업로드 버그 현상이 생김 > 해결
-git remote set-url origin https://webstoryboy@github.com/webstoryboy/vite-project2023.git
+git remote set-url origin https://jh71171@github.com/jh71171/vite-project.git
 </details>
