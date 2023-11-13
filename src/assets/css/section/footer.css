@@ -1,37 +1,51 @@
 #footer {
-    height: 100vh;
+    font-family: var(--mainKor-font);
+}
+
+.footer__inner {
+    padding: 16px;
 }
 
 .footer__text {
-    width: 100%;
-    height: 40vh;
-    color: var(--mainSub-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--mainSub-color);
+    border-bottom: 1px solid var(--mainSub-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    font-family: var(--mainPop-font);
+    justify-content: space-between;
 }
 
 .footer__info {
     display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
 }
 
 .footer__info .left {
-    width: 50%;
+    width: 40%;
 }
 
-.footer__info .left title {
-    font-size: 2vw;
+.footer__info .left .title {
+    border-top: 2px solid var(--mainSub-color);
+    border-bottom: 1px solid var(--mainSub-color);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* background: url(../../img/arrow.svg) no-repeat right 20px; */
+    transition: all 0.3s;
     color: var(--mainSub-color);
-    font-family: var(--mainPop-font);
 }
 
-.footer__info .left .title a {
-    font-size: 2vw;
+.footer__info .left .title:hover {
+    background-color: var(--mainSub-color);
+    padding-left: 10px;
+    border-color: transparent;
+}
+
+.footer__info .left .desc {
+    font-size: 12px;
+    padding-top: 20px;
     color: var(--mainSub-color);
-    font-family: var(--mainPop-font);
 }
 
 .footer__info .right {
@@ -41,7 +55,9 @@
 .footer__info .right h3 {
     border-top: 2px solid var(--mainSub-color);
     font-size: 10px;
-    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    color: var(--mainSub-color);
 }
 
 .footer__info .right ul {
@@ -49,8 +65,22 @@
 }
 
 .footer__info .right li {
-    border-bottom: 2px solid var(--mainSub-color);
+    border-bottom: 1px solid var(--mainSub-color);
+}
 
+.footer__info .right li a {
+    padding: 14px 0;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--mainSub-color);
+}
+
+.footer__info .right li em {
+    font-size: 12px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 .footer__info .right li:hover em {
@@ -58,11 +88,10 @@
 }
 
 .footer__right {
-    width: 30%;
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
-    margin-top: 30px;
+    margin-bottom: 20px;
     color: var(--mainSub-color);
 }
 
